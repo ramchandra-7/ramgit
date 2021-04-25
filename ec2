@@ -1,0 +1,5 @@
+2 types:ebs and instance store
+limit:20 instances per region
+general purpose:a,m,t
+compute optimized:c
+memory optimized :r,x,z
