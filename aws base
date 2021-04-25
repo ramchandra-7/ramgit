@@ -1,0 +1,18 @@
+cloud:sharing of resources from a remote location via internet using pay as u go model
+
+
+application-9
+data-8
+runtime-7
+middleware-6
+os-5
+virtualization-4
+server-3
+storage-2
+network-1
+
+1-5  iaas
+1-7  paas
+all saas
+
+aws uses xen hypervisor
