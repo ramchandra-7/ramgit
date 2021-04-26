@@ -1,0 +1,31 @@
+cidr-
+private ip start with 10,172,192
+10.0.0.0-10.255.255.255
+172.16.0.0-172.31.255.255
+192.168.0.0-192.168.255.255
+
+vpc-privatized nw where we can create our own cidr
+cloud supports only from/16 to /28
+smaller entities of vpc are subnets
+
+1-create vpc
+2.create subnets
+3.create internet gateway
+4.attach internet gw to vpc
+5.create route table 
+6.add a route with destination as 0.0.0.0 and target as ig
+7.edit subnet association by adding subnet to make it public subnet
+
+Main route table—The route table that automatically comes with your VPC. It controls the routing for all subnets that are not explicitly associated with any other route table.
+
+Destination—The range of IP addresses where you want traffic to go (destination CIDR). For example, an external corporate network with a 172.16.0.0/12 CIDR.
+Target—The gateway, network interface, or connection through which to send the destination traffic; for example, an internet gateway
+Local route—A default route for communication within the VPC.
+ A subnet can only be associated with one route table at a time, but you can associate multiple subnets with the same subnet route table.
+ Local route—A default route for communication within the VPC
+ Each route in a table specifies a destination and a target. For example, to enable your subnet to access the internet through an internet gateway, add the following route to your subnet route table.
+
+Destination	Target
+0.0.0.0/0	igw-12345678901234567
+The destination for the route is 0.0.0.0/0, which represents all IPv4 addresses. The target is the internet gateway that's attached to your VPC.
+Every route table contains a local route for communication within the VPC. This route is added by default to all route tables. If your VPC has more than one IPv4 CIDR block, your route tables contain a local route for each IPv4 CIDR block.
