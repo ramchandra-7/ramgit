@@ -1,0 +1,4 @@
+mkdir /opt/pyvirtualenv
+virtualenv /opt/pyvirtualenv -p python3
+chmod  -R 755  /opt/pyvirtualenv
+source /opt/pyvirtualenv/bin/activate
