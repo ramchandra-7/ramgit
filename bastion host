@@ -1,0 +1,16 @@
+we create an instance by enabling pub ip,in pub subnet.
+we keep ssh as only my ip in security grp and name that sg
+we login to it and create keypair usin ssh-keygen
+we copy his and import that keypair in aws 
+now we launch bh in prv subnet and disable pub ip
+in sg,we add sg of previous instance
+and while launching we use imported keypair and launch
+now we can ssh into bastion host only from 1st instance.
+generate keypair and import it into aws by name http_kp
+launch ec2 in pub subnet &enable pub ip.
+add sg as previous instance sg
+add http port as all traffic
+use http_kp to launch it
+install httpd and check in browser using pubip:80
+
+
