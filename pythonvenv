@@ -2,3 +2,11 @@ mkdir /opt/pyvirtualenv
 virtualenv /opt/pyvirtualenv -p python3
 chmod  -R 755  /opt/pyvirtualenv
 source /opt/pyvirtualenv/bin/activate
+
+
+    
+mkdir ~/pyvirtualenv
+virtualenv ~/pyvirtualenv -p python3
+source ~/pyvirtualenv/bin/activate
+ pip install kafka-python
+
