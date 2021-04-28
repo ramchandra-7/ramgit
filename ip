@@ -1,0 +1,34 @@
+public ip:can be accessed over internet
+private ip: used to assign to computers within private space ithout exposing them to internet
+if we have multiple systems in home,our router gets public ip and every device connected to it gets private ip via dhcp
+
+IANA internet assigned number authority assigns ips to irganisations and isps
+
+192.168.60.55/20
+
+11111111.11111111.11110000.00000000   /20 indicates 20 1's
+ 60--00011110
+ 
+ since /20 comes in 3rd octet we perform with the 3rd octet
+ 
+ and b/w 11110000  00011110  gives 48 00110000
+ 
+ so usable ips are 192.168.48.0 
+  
+  last bit turned one in 3rd octet of 19.168.60.55 is 16 
+  so 48+16-1=63
+  
+  192.168.63.254
+  
+  172.16.60.16/29
+  
+  11111111.11111111.11111111.11111000
+  for 16-00010000
+  
+  and bw 11111000 and 00010000
+  gives  16-00010000
+  172.16.60.16
+  last bit turned one is 8 so,16+8-1=23
+  172.16.60.23
+  
+  
