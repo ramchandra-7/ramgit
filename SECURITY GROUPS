@@ -1,0 +1,6 @@
+for instance level
+has only permit rule,no deny rule
+if we specify in inbound rules to allow traffic on port 80,then by default outbound traffic is alos allowed on that port(stateful)
+i.e return traffic is allowed if inbound traffic is allowed
+NACL o-is for subnet level
+default NACL allows all inbound and outbound traffic by default.
