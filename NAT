@@ -1,0 +1,5 @@
+placed in pub subnets
+for instances in private subnet to connect to internet
+while creating nat gw,specify a pub sn in which it should reside
+and specidy elastic ip to associate with nat gw
+update routetable og prv subnets to point internet bound traffic to ig
