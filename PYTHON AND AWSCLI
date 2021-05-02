@@ -1,0 +1,25 @@
+https://www.liquidweb.com/kb/how-to-install-python-3-on-ln -s <path to the file/folder to be linked/FOR WHICH FILE TO CREATE SYMLINK> <the path of the link to be created/WHERE TO CREATE>centos-7/
+
+
+ln -s <path to the file/folder to be linked/FOR WHICH FILE TO CREATE SYMLINK> <the path of the link to be created/WHERE TO CREATE>
+
+
+for every user to run aws
+used which aws in ec2-user
+/usr/local/bin/aws
+anfd echo $PATH
+[ec2-user@ip-10-0-1-223 bin]$ echo $PATH
+/home/ec2-user/.local/bin:/home/ec2-user/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+
+in ram user
+export PATH=$PATH:/usr/local/bin
+
+but this is temporary.when session is over its gone
+
+to configure
+awscli configure --profile <profilename>
+
+while running commands use it along with command
+aws <command> --profile <profiename>
+
+aws ec2 describe-instances --profile user1
