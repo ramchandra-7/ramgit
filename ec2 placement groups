@@ -1,0 +1,5 @@
+to decide how ec2 instances are placed within aws infrastructure
+3 types: within az
+cluster-places instances in a single availabilty zone placed on same rack,low latency high risk
+spread-spreads instances across underlying hardware,max 7 instances per grp per az,span across multiple az
+patition-similar to spread,spread across many partitions,which rely on different racks
