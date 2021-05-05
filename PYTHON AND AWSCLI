@@ -23,3 +23,6 @@ while running commands use it along with command
 aws <command> --profile <profiename>
 
 aws ec2 describe-instances --profile user1
+
+its not good to use aaws configure because anyone who has access to instance can get those creds
+its better to use instance roles ,attch an role to ec2
