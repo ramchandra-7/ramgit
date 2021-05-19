@@ -1,0 +1,3 @@
+logical component in vpc -represnts a virtual network card,gives ec2 access to nw
+we can create eni indepepndtly ,and attach them to ec2 and move from one to another
+spcific to az
