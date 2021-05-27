@@ -1,0 +1,19 @@
+when we create encrpyted ebs vol:
+data at rest is encrpyted inside vol
+all data in flight is encrpyted nw instance and vol is encrpyed
+all smapshots are encrpyted
+all vols created from snapshots
+encrpytion and decrypttion are handled transparently(we dont need to manage)
+ebs encryption leverages keys from aes-256
+
+to encpyrt an unencrpyteed ebxs vol:
+create ebs ss of vol
+take ebs ss(using copy)
+by default ss is unencryted
+now got to snapshots and slelect create snapshot by enabling encrpyting ss
+
+cretae new ebs from ss
+attach ebs vol to original instancce
+
+
+we can also cretae encrpyted ss using  kms key
