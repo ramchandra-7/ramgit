@@ -1,0 +1,8 @@
+can be mounted on many ec2
+works with ec2 in multi az
+uses nfsv4.1 protocol
+compatible with linux based ami
+encrption at rest using kms
+
+cretae nfs client
+mount on required ec2 using doc
