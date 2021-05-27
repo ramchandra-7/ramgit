@@ -1,0 +1,7 @@
+to take backup of ebs vol at an point in time and restore vol from it
+not necessar to detach vol to do snapshot,but recommended
+can copy snapshot across az od region
+
+customized ec2 is ami
+launch ec2 from ami
+we can create an insatnce ,stop it and create an ami and launch ami from that instance
