@@ -1,0 +1,6 @@
+raid 0=to increase performance
+data is divided into blocks and sent to different disks,if one disk fails,everything fials
+raid 1
+to increase fault tolernace
+same blocks are sent concurrently to two diff disks
+no data is lost even if one disk is lost
