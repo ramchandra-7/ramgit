@@ -1,0 +1,3 @@
+ebs vols are good nw drives with limited performance
+if we need a high performance disk,we use ec2 instance store
+intance store lose their storage when stopped
