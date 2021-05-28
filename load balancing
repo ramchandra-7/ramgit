@@ -1,0 +1,26 @@
+servers that forward traffic to multiple servers downstreams
+
+why?
+we just need to know dns of lb.not the instances behind it
+spread across multiple instances.
+regular health check of instances
+provdes ssl for websites
+
+helath cjeck is done on a route and port
+if response is not 200,then instance is unhelathy
+
+3 types:
+classic lb
+http,https,tcp
+app load balancer
+http,https,websocket
+nw load balancer
+tcp,tls,udp
+
+
+we can set up either public(external) or private(internal) loadbalancer
+
+4xx are client induced errors
+5xx are app induced errors
+lb 503 errror means capacity at target or no registered target
+if lb cant connect to app,check sg
