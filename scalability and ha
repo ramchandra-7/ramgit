@@ -1,0 +1,9 @@
+scalability:
+that an app can handle greater loads by adapating:
+1.vertical scaling,horizontal scaling
+vertical scaling:increasing size of instance(upgrading instance)
+2.hor scaling:increasing number of systems for our app(scale in/out)
+
+high availabilty:
+means running an app in atleast 2 data centres/azs
+goal is to survive data centre loss
