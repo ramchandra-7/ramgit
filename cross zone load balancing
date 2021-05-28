@@ -1,0 +1,2 @@
+with czlb,each load balancer evenly distributes across all registered intances in az
+ithout czlb,thry are distributed in instances of node of elb 
