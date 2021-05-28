@@ -1,0 +1,20 @@
+goal of asg is to:
+scale out ec2 to match increase load
+scale in to mathc decreased load
+ensure we have max and no of machines running 
+automatically register insatnces to load balancer
+
+asg has following attributes:
+ami+instance type
+ec2 user data
+ec2 insatnces
+keypairs
+ebs vlols
+min/max size
+nw and subnets info
+load balancer info
+scaling policy
+
+possibleto scale asg based on cloudbwatch alarms based on any metric
+
+asg literally terminates instances and creates new one
