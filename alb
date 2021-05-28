@@ -1,0 +1,28 @@
+lyer 7
+load balancing to multiple https apps across machines(target grps)
+
+load balancing to multiple apps across same  machines(containers)
+
+routing based on different target grps
+based on url ex:expample.com/users and example.com/posts
+based on hostname in url :one.example.com  and two.exapmple .com
+
+great fit for micro services and container based application
+
+gives fixed hostname:
+app servers doesnt see ip of client directly:
+true ip is inserted in header-x-forwaded-for
+can also get port and protocol used 
+
+client ip is directly talking to lb ,when lb talks to ec2 ,it used lb private ip
+
+
+The nodes of an Internet-facing load balancer have public IP addresses.
+The DNS name of an Internet-facing load balancer is publicly resolvable to the public IP addresses of the nodes.
+Therefore, Internet-facing load balancers can route requests from clients over the Internet.
+
+The nodes of an internal load balancer have only private IP addresses. 
+The DNS name of an internal load balancer is publicly resolvable to the private IP addresses of the nodes. 
+Therefore, internal load balancers can only route requests from clients with access to the VPC for the load balancer.
+
+we can route the requests using path by editing target grps and writing rule to send the request to particular path to particaula instance and give specific input
