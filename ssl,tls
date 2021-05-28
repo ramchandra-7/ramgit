@@ -1,0 +1,13 @@
+allows traffic bw clients and load balancer to be encrpyted in transit
+
+ssl,secure sokcet layer
+tls,newewr version of ssl
+tsl are used but referred as ssl
+
+lb uses an x509 certificate,manage certificates using acm
+
+we must specify a default cert
+we ust add special list of certs to support multiple domains
+
+SNI-server name indication
+for loading multiple certificates nto one web server
