@@ -1,0 +1,8 @@
+supports tcp,http,https
+health checks are tcp,https based
+fixed hostname:xxx.region.elb.amazonaws.com
+
+client >>>listener>clb>>internal>>ec2
+
+create lb and add insatnces and health checks
+create sg for lb and make http accessbile only for this sg in instances
