@@ -1,0 +1,5 @@
+layer 4:
+forard tcp and udp to instances
+
+very less latency
+has one static ip per az,supports assigning elastic ip(for hitelisting specific ip)
