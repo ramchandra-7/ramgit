@@ -1,0 +1,33 @@
+it is aglobal service,but we need to select a region while creating bucket
+
+versioining is enabled at bucket level
+for versioning the different versions we upload shud have same name
+
+encrpytio:
+sse-s3:    encrpts s3 objects using keys handled &managed by aws 
+
+object is server side encrpted
+aes-256 encyption 
+while uploading object ,we provide a https+header ,after finding this header,aws uses its own s3 managed key and encrpts objects and stores in s3 bucket
+header="x-amzserver-side-encyrtion":"aes-256"
+
+
+
+sse-kms  levergaes aws kms to manage encrpytion keys
+
+while uploading object ,we provide a https+header ,after finding this header,aws uses its kms cmk (customer  managed key )and encrpts objects and stores in s3 bucket
+header "x-amzserver-side-encyrtion":"aws:kms"
+
+sse-c-    when we wnat to mange our own keys
+
+sse using data keys fully managed by customer outside aws
+s3 doesnt store encrption key we provide
+https is used:
+encrption ke must be provided in http headers,for every http request made
+along with object ,e provide a cient side data key,aws encrpyts using this data key
+even to retrieve we need this data key
+client side encryption-
+we encrytpt the objects before uploading to aws s3,we decrytpt while retreiving
+customer fully manages keys and encrption cycle
+
+we can enable encrption for whole bucket or while uploading individual objects
