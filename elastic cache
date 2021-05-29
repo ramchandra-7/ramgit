@@ -1,0 +1,10 @@
+in memory databases with realy high performance 
+help reduce load of dtaabases for read intensive workload
+
+elastic cache is placed betweeen rds and  application.
+
+app queries elastic cache ,ifnot available get from rds and store in elastic cache
+helps relieve load in rds
+
+when user logs in,app writes session data into elastic cache
+when user hits another session,intance retrieves session and user is already logged in
