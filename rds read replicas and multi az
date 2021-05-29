@@ -1,0 +1,15 @@
+upto 5 read replicas
+within az,cross az or cross region 
+
+asynchronous replication happens in read replicas(eventually consistent)
+replicas can be promoted to their own db
+
+read replicas are used for only select kind of statements ex:read
+
+
+rds multi az is used for disaster recovery:
+rds db in another az happens synchronously
+
+both has one dns name-so automatic failover to standby
+
+read replicas can be set multi az for disaster recovery 
