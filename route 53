@@ -1,0 +1,15 @@
+managed dns system
+
+domain name system
+collection of records and rules that helps client understand  to reach a server through domain name
+
+4 types:
+a type:hostname to ipv4
+aaaa:hostname to ipv6
+cname :hostname to hostname
+alias hostname to aws resource
+
+
+TTL:wa for eb browsers to cache response of dns query,not to overload dns
+
+webbroser will cache the response for the ttl set,will not query 53 agian
