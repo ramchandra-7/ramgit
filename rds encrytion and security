@@ -1,0 +1,30 @@
+at rest encrption:
+possible to encrpt both master and read replicas with aws kms -aes 256
+encrpytion has to enabled at launch time
+if master is not encrpyted,read relicas cant be encrypted
+
+in flight encrpytion:
+ssl certs to encrpyt data to rds in flight
+
+to enforce ssl:
+run a command for both postgresql and mysql
+
+snapashots of unencrpted databases are un encrpyted:
+snapshots of encrpyted databases are encrpyted:
+can copy a asnapshot into encrpyted one:
+
+
+to encrytpr an unencrpyted database:
+
+create ss of unencypted one:
+copy snapshot and enable encrpytion for ss
+restore db from encrpted ss
+migrtae apps to new db ,and delete old one
+
+rds-iam authentication orks with postgresql and mysql
+
+dont need ps,just an token obtained through iam &rds api calss
+token has lifespan of 15 mnts
+
+encrpytion at rest only when we create db instance:
+or:unencrpted db:snapshot:copy ss as encrpyted:create db from ss
