@@ -1,0 +1,9 @@
+relational database service
+
+managed db ervice ,use sql as query languaage
+backups are automatically enabled in rds
+
+dail full backup of database
+transacational logs are backed by rds for every 5 mins
+
+snapshots are backups that are manual triggered by user
