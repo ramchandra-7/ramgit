@@ -1,0 +1,17 @@
+simple routing polic:
+when we need to redirect to single resource:
+no helath checks 
+
+weighted routing policy:
+controls percent of traffic goes to each endpoint
+
+latency routing policy:
+redirects server to least latency close to us
+
+geolocation routing policy:
+we speicfy,traffic from specidic place should go to specidic ip
+
+geoproximity:
+routes traffic based on geogrpahic location of users and resources
+
+based on bias value
