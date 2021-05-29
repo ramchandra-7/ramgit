@@ -1,0 +1,7 @@
+cnmae:points hostname to another hostname
+
+works onl for non root domain
+ex:something.domain.com
+alias
+points hostname to aws resource 
+works for root domain and non root domain
