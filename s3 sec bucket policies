@@ -1,0 +1,16 @@
+user based-
+depednds on ima policies,hich api calls should be allowed for specific user 
+
+resource based 
+bucket policies-bucket wide rules from s3 console-allows cross account
+object acl-
+bucket acl
+
+iam principal can access s3 obj if
+user iam permissions allow it or bucket policy allows it
+
+s3 bukcet policies:
+json based policies:
+reousrces:bukcets or objects
+effect:allow or deny
+principal:account or user to apply policy to 
