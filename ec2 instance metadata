@@ -1,0 +1,5 @@
+can retrieve iam role name from metadata
+http://169.254.169.254/latest/metadata
+
+metadata=info about ec2 instance
+userdata=launch scipt of ec2 
