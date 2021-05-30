@@ -1,0 +1,3 @@
+content chached at edge loctaions,improve read peroformance
+
+we cereate a origin accesss identity(oai)such that only h can access cloudfrot content
