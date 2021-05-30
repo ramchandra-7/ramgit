@@ -1,0 +1,6 @@
+can host statis websites and have tem accessible over www
+
+url will be <bucket name>s3.website<Aws region>amazonaws.com
+
+we use index.tml and error.tml files
+unblock public access and write a bucket policy for anyone to getobject
