@@ -1,0 +1,12 @@
+cloudwatch-provides metrics for every service in aws
+metric is nay varialble like nwin,cpuout etc
+
+
+it has log groups,log streams
+
+we need to add cloudwatch role to ec2 and install cloudwatch agent for cloudwatch logs for ec2
+
+cloudwatch logs agent,cloudwatch unified agent
+unified is more advanced
+
+cloudwatch alarms:used to trigger notifs for any metric
