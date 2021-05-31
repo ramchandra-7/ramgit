@@ -1,0 +1,21 @@
+sts:for temp access to aws resources(provides tokens hich expires within a certain time 
+
+assume role with asml:reurn creds for users logeged ith saml
+asssume role with ebidentity:for users logged in eith idp,facebook etc
+assume role:ithin own account
+get session toke for mfa
+
+define iam role
+define which principals can access iam role
+use sts to retrieve creds and impersonate iam role we have access to
+
+
+identity federtaion :
+lets users oustisde of aws to asume temporary role
+can be many types:
+saml 2.0
+web identity federation with cognito
+single sign on
+using federation,we dont need to create iam users
+
+pending
