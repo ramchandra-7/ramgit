@@ -1,0 +1,14 @@
+when deploting multiple apps together,they need to communicate iwth each other
+
+synchronous(app to app)
+
+asyncronous(app to queue to app)
+
+
+sqs:producers send messages to queue and concumers poll queue for messages 
+
+sns:sned one message to many receivers
+
+event producer sends one message to one sns topic
+as many subsriptions we need to listen to sns topi notifs   
+each subscriber to topic ill get all messages
