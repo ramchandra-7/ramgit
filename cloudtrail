@@ -1,0 +1,22 @@
+governance,compliance and auidt for aws ccount
+
+inspecting any thing hat happended in our aws account
+
+cloudtrail insights:
+inaccurate resource provoionghitting service limits
+gaps in maintenance activity
+
+
+cloudwatch vs cloudtrail
+
+watch:log agggregation,performance monitoring ,dashboards,events &alerting
+
+trails:
+record every api cll made by everyone in our account
+
+ex load balancer:
+trail:
+track who made changes to load balncer using cloudtrail
+watch:
+monitor incoming connnections
+make adahboard to analyze performance
