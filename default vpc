@@ -1,0 +1,7 @@
+has internet connectivity and all instances have pub ip
+
+we can add more than 1 cidr to vpc
+
+subnets are tried to az
+
+we place load balanceers in pub sn
