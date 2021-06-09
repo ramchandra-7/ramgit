@@ -8,4 +8,22 @@ we place load balanceers in pub sn
 internet gateway helps instances in vpc connnect to internet,scales horizontally is ha and redundant
 ig is alos nat for instances that jave public ipv4
 
-ig alone doesnt give internet,route tables need to be edited
+ig alone doesnt give internet,route tables need to be edited 
+
+
+created in specific az,uses eip
+cant be used by insatnces in same subnet ,only other subnets
+private sn will talk to nat,nat talks ti igw
+nat gateway place in pub sn
+private rt will have entry for nat gw
+
+
+if we select enable dns hostname setting for vpc,it also gives public dns names along eith pub ip for instances
+
+create a private hosted zone (create any domain and access within vpc)
+
+
+nacl is per subnet
+
+
+
