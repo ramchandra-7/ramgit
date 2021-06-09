@@ -1,0 +1,11 @@
+connect 2 vpcs priavtely using aws nw 
+make them behave as if they are in same nw
+
+update routetable in each vpcs subnet to ensure instance communication
+
+we can reference security grp if peered vpc(other account)
+
+go to peering connection,create it and accept request
+in pub rt of vpc ,add cidr of another vpc target is peering connection
+no update the rt of other vpc too
+same entry ith cidr of another vpc
