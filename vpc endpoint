@@ -1,0 +1,14 @@
+allows us to connect to aws ervice privately instead od public www nw
+no need of igw nat to access aws 
+
+2 types
+interface providion eni (private ip) as entry point 
+gateway -provisions an target and must be used in route table -s3 and dynamo db
+
+creste a role that has access to s3 and attach to private instance
+
+create endpoint
+
+select s3 and select prv rt,a rule gets added automaticall
+default aws cli configured in useast1
+imp to mention --region <region name>
