@@ -1,0 +1,19 @@
+on aws side, we have a vpn gw and on corporate side we have customer gw
+
+by site to site vpn,we connect aws nw to corporate nw 
+seems like both are in same nw(corporate)
+
+bw customer gw and vpn gw we set up s-s vpn
+
+it links the corporate and aws nw together
+
+s-svpn
+vpg:
+acts as vpn concentrstor on the aws side of vpn connection
+vgw is created and attahed to vpc from which u want to create s-s vpn
+
+cg:
+sw app or physical device on customer side of vpn connection
+
+use static,routable ip for cg device
+if ggw behind nat,use pub ip of nat
