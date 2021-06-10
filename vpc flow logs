@@ -1,0 +1,20 @@
+to cpature info about ip traffic going to our instances
+
+to monitor and trouble shoot connectivty issues
+flow logs can go directly to s3/cloudbwatch
+flowlogs has specific sntax
+<version><acc id><interface id>src addr><dst addr><src port><dst port><protocol><packets><bytes><start><end><log status>
+action:success or failure based on sg or nacl
+query flow logs using athena on s3 and cloudwatch insights
+
+vpc>flowlogs 
+we can select either s3 or cloudwtach
+if u select cloudwatch,go to cloudwatch and create log grp
+
+ip lookup
+
+using ip lookup we can know info abt ip
+
+query vpc flow logs in s3 using athena
+use google for query vpc flo logs using athena,gives all steps 
+we create db,create table and partition it
