@@ -1,0 +1,7 @@
+provides a ddedicated private connection from remote nw to vpc 
+
+connection must be setup beywwen our datacentre and aws dc locations 
+we need to setup vpg on our vpc 
+we can access both public,private respurces  on same connection .
+
+if we want to setup direct connnect to one or more vpc in diff region,we use dc dateway
