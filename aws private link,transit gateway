@@ -1,0 +1,13 @@
+egress means outgoing 
+ for expoing services in your vpc to other vpcs 
+ 
+ launch a nw load balancer in service vpc  and eni in customer vpc
+ 
+ eni makes it look like the app in service vpc is in customer vpc
+ 
+ endpoint services in ui in our account
+ 
+ endpoints in target account 
+ 
+ 
+ for having transitive peering bw thousans of vpcs and on premises
